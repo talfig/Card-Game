@@ -42,7 +42,9 @@ public class WarGame {
     }
 
     private void whoWon() {
-        if (player1.isEmpty()) {
+        if (player1.isEmpty() && player2.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "The game has ended in a draw!");
+        } else if (player1.isEmpty()) {
             JOptionPane.showMessageDialog(null, "Player1 has won the game!");
         } else {
             JOptionPane.showMessageDialog(null, "Player2 has won the game!");
