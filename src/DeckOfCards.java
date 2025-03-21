@@ -19,6 +19,10 @@ public class DeckOfCards { // In this class we define and handle different metho
         }
     }
 
+    public ArrayList<Card> getDeck() {
+        return deck;
+    }
+
     public void shuffle() {
         for (int first = 0; first < NUMBER_OF_CARDS; first++) {
             int second = randomNumbers.nextInt(NUMBER_OF_CARDS);
